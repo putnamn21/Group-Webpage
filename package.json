@@ -1,0 +1,17 @@
+{
+  "name": "webpage",
+  "version": "1.0.0",
+  "description": "Webpage for Group Publishing",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-stylus": "^2.3.1",
+    "nib": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan Putnam <nathanputnam2@gmail.com>",
+  "license": "ISC"
+}

@@ -1,0 +1,131 @@
+@import 'nib'
+  
+/*MailChimp Color Pallet*/
+
+chimpBlue = #239AB9
+chimpLightBlue = #52BAD5
+chimpLightestBlue = #6DC5DC
+  
+chimpCharcoalGrey = #373737
+chimpGrey = #5D5C5D
+chimpLightGrey = #B7B7B7
+offWhite = #eaeaea
+
+chimpOrange = #e85c41
+
+
+
+/*Global Presets*/
+
+*
+  font-family 'Helvetica Neue', sans-serif !important
+a
+  color black
+  transition .2s
+  &:hover, &:focus, &:active
+    background-color transparent !important
+    color lighten(black, 40%)
+  
+.call-to-action
+  font-size 20px
+  cursor pointer
+  border-radius 3px
+  border 0px
+  background-color chimpOrange
+  color white !important
+  transition .2s
+  padding 10px !important
+  &:hover
+    background-color darken(chimpOrange, 15%) !important 
+  &:active
+    background-color darken(chimpOrange, 20%) !important  
+  &:focus
+    background-color darken(chimpOrange, 10%) !important
+
+/*Header*/ 
+.navbar
+  height 60px
+  margin 0
+  padding 0 25px 0 25px
+  a 
+    margin-top 5px
+    border-radius 3px
+  .call-to-action
+    font-size 14px
+    margin-top 10px !important
+    display inline-block !important
+.navbar-brand
+  padding 5px 10px 10px 10px
+  height 60px
+  margin -5px 20px 0 0
+  img 
+    height 100%
+.navbar-right
+  margin-right 0px
+    
+.navbar-toggle
+  border 1px solid chimpOrange
+  span 
+    background-color: chimpOrange
+
+  
+/*Jumbotron*/
+
+.jumbotron
+  background-color offWhite
+  min-height 750px
+  h1
+    margin 0px
+    padding 10px 0 10px 0
+    color chimpCharcoalGrey
+
+/*Reviews*/
+
+.reviews
+  .img-responsive
+    width 250px
+    display inline
+    border 3px solid chimpLightBlue
+  h2
+    color chimpCharcoalGrey
+    
+/*Features*/
+
+.feature-graphic-container
+  min-height 500px
+  height 100%
+  width 100%
+  border 2px solid chimpBlue
+  border-radius 5px
+  border-top-width 15px
+  
+.featurette-divider
+  margin 40px 0 40px 0
+  border-color chimpLightBlue
+  border-width 2px
+/*Footer*/
+
+footer
+  img 
+    height 30px
+
+/*Media Screen Edits*/
+
+  /*Larger then medium*/
+@media screen and (min-width: 760px)
+  .jumbotron
+    h1
+      font-size 40px
+
+  /*Smaller then medium*/
+@media screen and (max-width: 760px)
+  #navbar
+    background-color white
+    border-radius 3px
+    box-shadow 0px 0px 5px rgba(0, 0, 0, 0.4)
+    .call-to-action
+      margin-left 10px !important
+      display inline-block !important
+      
+  .jumbotron
+    min-height 400px

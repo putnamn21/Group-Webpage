@@ -1,0 +1,137 @@
+/*MailChimp Color Pallet*/
+/*Global Presets*/
+* {
+  font-family: 'Helvetica Neue', sans-serif !important;
+}
+a {
+  color: #000;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+a:hover,
+a:focus,
+a:active {
+  background-color: transparent !important;
+  color: #666;
+}
+.call-to-action {
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 0px;
+  background-color: #e85c41;
+  color: #fff !important;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+  padding: 10px !important;
+}
+.call-to-action:hover {
+  background-color: #e13b1b !important;
+}
+.call-to-action:active {
+  background-color: #d4381a !important;
+}
+.call-to-action:focus {
+  background-color: #e54527 !important;
+}
+/*Header*/
+.navbar {
+  height: 60px;
+  margin: 0;
+  padding: 0 25px 0 25px;
+}
+.navbar a {
+  margin-top: 5px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.navbar .call-to-action {
+  font-size: 14px;
+  margin-top: 10px !important;
+  display: inline-block !important;
+}
+.navbar-brand {
+  padding: 5px 10px 10px 10px;
+  height: 60px;
+  margin: -5px 20px 0 0;
+}
+.navbar-brand img {
+  height: 100%;
+}
+.navbar-right {
+  margin-right: 0px;
+}
+.navbar-toggle {
+  border: 1px solid #e85c41;
+}
+.navbar-toggle span {
+  background-color: #e85c41;
+}
+/*Jumbotron*/
+.jumbotron {
+  background-color: #eaeaea;
+  min-height: 750px;
+}
+.jumbotron h1 {
+  margin: 0px;
+  padding: 10px 0 10px 0;
+  color: #373737;
+}
+/*Reviews*/
+.reviews .img-responsive {
+  width: 250px;
+  display: inline;
+  border: 3px solid #52bad5;
+}
+.reviews h2 {
+  color: #373737;
+}
+/*Features*/
+.feature-graphic-container {
+  min-height: 500px;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #239ab9;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border-top-width: 15px;
+}
+.featurette-divider {
+  margin: 40px 0 40px 0;
+  border-color: #52bad5;
+  border-width: 2px;
+}
+/*Footer*/
+footer img {
+  height: 30px;
+}
+/*Media Screen Edits*/
+/*Larger then medium*/
+@media screen and (min-width: 760px) {
+  .jumbotron h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 760px) {
+  #navbar {
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+  }
+  #navbar .call-to-action {
+    margin-left: 10px !important;
+    display: inline-block !important;
+  }
+  .jumbotron {
+    min-height: 400px;
+  }
+}
