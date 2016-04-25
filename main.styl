@@ -102,12 +102,6 @@ a
   opacity 0
   animation fadeIn 1s ease-in forwards
   
-@keyframes fadeIn
-  0%
-    opacity 0
-  100%
-    opacity 1
-  
 .drag-drop
   position absolute
   z-index 100
@@ -120,20 +114,11 @@ a
     right -10%
     top 90%
     transform rotate(45deg)
+    animation fadeOut .5s 3s forwards
   img 
     width 100%
     
-@keyframes dragAndDrop
-  0%
-    opacity 0
-    top 30.5%
-    left 4.3%
-  10%
-    opacity 1
-  100%
-    opacity 1
-    top 75%
-    left 74%
+
     
 
 /*Reviews*/
@@ -173,6 +158,7 @@ a
     padding 6px 10px 0 0
     font-size 12px
 .featurette
+  opacity 0
   p 
     margin-top 40px
     margin-bottom 40px
@@ -202,3 +188,39 @@ footer
       
   .jumbotron
     min-height 400px
+
+    
+ /* Animations */   
+    
+.feature-fade-in
+  animation featureFadeIn .8s ease-in forwards
+  
+@keyframes featureFadeIn
+  0%
+    opacity 0
+    transform translateY(30px)
+  100%
+    opacity 1
+    transform translateY(0px)
+    
+@keyframes dragAndDrop
+  0%
+    opacity 0
+    top 30.5%
+    left 4.3%
+  10%
+    opacity 1
+  100%
+    opacity 1
+    top 75%
+    left 74%
+@keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 1
+@keyframes fadeOut
+  0%
+    opacity 1
+  100%
+    opacity 0
