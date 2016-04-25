@@ -2,13 +2,13 @@
   
 /*MailChimp Color Pallet*/
 
-chimpBlue = #239AB9
-chimpLightBlue = #52BAD5
-chimpLightestBlue = #6DC5DC
+chimpBlue = rgb(35, 154, 185)
+chimpLightBlue = rgb(82, 186, 213)
+chimpLightestBlue = rgb(109, 197, 220)
   
 chimpCharcoalGrey = #373737
-chimpGrey = #5D5C5D
-chimpLightGrey = #B7B7B7
+chimpGrey = rgb(93, 92, 93)
+chimpLightGrey = rgb(183, 183, 183)
 offWhite = #eaeaea
 
 chimpOrange = #e85c41
@@ -18,7 +18,7 @@ chimpOrange = #e85c41
 /*Global Presets*/
 
 *
-  font-family 'Helvetica Neue', sans-serif !important
+  font-family 'Helvetica Neue', sans-serif
 a
   color black
   transition .2s
@@ -47,6 +47,7 @@ a
   height 60px
   margin 0
   padding 0 25px 0 25px
+  background-color white
   a 
     margin-top 5px
     border-radius 3px
@@ -73,11 +74,67 @@ a
 
 .jumbotron
   background-color offWhite
-  min-height 750px
+  padding 10px 0 0 0
+  margin-bottom 150px
   h1
-    margin 0px
+    margin 60px 60px 10px 60px
     padding 10px 0 10px 0
     color chimpCharcoalGrey
+    span 
+      display block
+  div.text-center
+    height 50px
+  .row
+    margin 0px
+
+#animation-1 + span
+  animation-delay .1s
+#animation-1 + span + span
+  animation-delay .2s
+    
+.main-graphic
+  z-index 50
+  border 2px solid chimpBlue
+  background-color chimpBlue
+  border-radius 5px
+  border-top-width 15px
+  box-shadow 0px 0px 5px rgba(0, 0, 0, 0.4)
+  opacity 0
+  animation fadeIn 1s ease-in forwards
+  
+@keyframes fadeIn
+  0%
+    opacity 0
+  100%
+    opacity 1
+  
+.drag-drop
+  position absolute
+  z-index 100
+  width 19.5%
+  opacity 0
+  animation dragAndDrop 1s 2s ease-in-out forwards
+  .glyphicon 
+    position absolute
+    font-size 20px
+    right -10%
+    top 90%
+    transform rotate(45deg)
+  img 
+    width 100%
+    
+@keyframes dragAndDrop
+  0%
+    opacity 0
+    top 30.5%
+    left 4.3%
+  10%
+    opacity 1
+  100%
+    opacity 1
+    top 75%
+    left 74%
+    
 
 /*Reviews*/
 
@@ -92,17 +149,33 @@ a
 /*Features*/
 
 .feature-graphic-container
-  min-height 500px
-  height 100%
   width 100%
   border 2px solid chimpBlue
+  background-color chimpBlue
   border-radius 5px
   border-top-width 15px
+  box-shadow 0px 0px 5px rgba(0, 0, 0, 0.4)
   
 .featurette-divider
-  margin 40px 0 40px 0
+  margin 60px 0 60px 0
   border-color chimpLightBlue
   border-width 2px
+.feature-graphic
+  width 100%
+.feature-graphic-header
+  height 30px
+  background-color chimpCharcoalGrey
+  img 
+    height 25px
+    margin 3px 0 0 5px
+  span 
+    color white
+    padding 6px 10px 0 0
+    font-size 12px
+.featurette
+  p 
+    margin-top 40px
+    margin-bottom 40px
 /*Footer*/
 
 footer

@@ -13,7 +13,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- Animate CSS -->
-    
+    <link rel="stylesheet" href="./css/animate.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/main.css">
 
@@ -25,7 +25,7 @@
   <body>
    
     <div class="navbar-wrapper">
-        <nav class="navbar navbar-static-top">
+        <nav class="navbar navbar-fixed-top">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="/assets/mc_freddie_color_web.png" alt="freddy the mailchimp"></a>
+              <a class="navbar-brand" href="#"><img src="./assets/mc_freddie_color_web.png" alt="freddy the mailchimp"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -52,9 +52,22 @@
 <!-- Jumbotron ================================================== -->
 
     <div class="jumbotron">
-      <h1 class="text-center">Workflow. It's Bananas! Drag. Drop. Automate</h1>
-      
-      
+      <h1 class="text-center"><span class="animated bounceInRight" id="animation-1">Workflow.</span><span class="animated bounceInRight">It's Bananas!</span><span class="animated bounceInRight">Drag. Drop. Automate</span></h1>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+         <div class="drag-drop">
+           <span class="glyphicon glyphicon-hand-left"></span>
+           <img src="./assets/LoyalCustomerButton.svg" alt="button">
+         </div>
+         <div class="main-graphic">
+             <div class="feature-graphic-header">
+               <img src="./assets/mc_script_white_web.png" alt="mailchimp">
+               <span class="pull-right">Save and Exit</span>
+             </div>
+              <img class="feature-graphic" src="./assets/AutomatedSmartLists.svg" alt="Smart-lists graphic">
+         </div>
+        </div>
+      </div> 
       <div class="text-center">
        <h3>Join Us!</h3>
        <span class="call-to-action">Free 30-day Trial!</span> 
@@ -68,19 +81,19 @@
       <!-- Reviews =========================================-->
       <div class="row text-center reviews">
         <div class="col-lg-4">
-          <img class="img-circle img-responsive" src="/assets/startup-photos-2.jpg" alt="Sherry's business photo">
+          <img class="img-circle img-responsive" src="./assets/startup-photos-2.jpg" alt="Sherry's business photo">
           <h2>Small Business - Large Impact</h2>
           <p>Learn how Sherry used Mailchimps campaign automation one up her large, established rivals. Mailchimp's automated campaigns allow you to put professional emails in front of your customers at just the right time.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle img-responsive" src="/assets/pexels-artist-2.jpg" alt="">
+          <img class="img-circle img-responsive" src="./assets/pexels-artist-2.jpg" alt="">
           <h2>Intuitive and classy</h2>
           <p>Joniqua is an artist who uses Mailchimp email templates to make sure each and every email is in sync with her brand image. Use Mailchimps beautiful email templates to unleash your inner van gogh.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle img-responsive" src="/assets/city-road-street-buildings-2.jpg" alt="Bruce's portrait">
+          <img class="img-circle img-responsive" src="./assets/city-road-street-buildings-2.jpg" alt="Bruce's portrait">
           <h2>Powerful tools for the most demanding tasks</h2>
           <p>See how Bruce's fortune 1000 company leverages Mailchimps Analytics to keep his business at the cutting edge. Mailchimp is robust enough for the largest of companies.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
@@ -90,44 +103,56 @@
 
       <!-- Features =========================================================== -->
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette" id="features">
-        <div class="col-md-5 col-md-push-7">
-          <h2 class="featurette-heading">Automated Smart Lists <span class="text-muted">Greater Success with Less Time</span></h2>
-          <p class="lead">Smart Lists present you with the perfect customers for your marketing campaign. Drag and drop smart lists into your campaign workflow to easily target the perfect group. A smartlist not specific enough for your needs? Not to worry, create your own with the most analytics at your fingertips.</p>
-        </div>
-        <div class="col-md-7 col-md-pull-5">
-          <div class="feature-graphic-container">
-            
-          </div>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
+      <hr class="featurette-divider" id="features">
+      
       <div class="row featurette">
-        <div class="col-md-5">
-          <h2 class="featurette-heading">Make Emails a Breeze! <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Who knew you were a design guru! Drag and drop to create stunning emails with reactive email templates. Phone, Tablet, Desktop, or 72 foot wide IMAX screen, your email will look great.</p>
-        </div>
-        <div class="col-md-7">
-          <div class="feature-graphic-container">
-            
-          </div>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5 col-md-push-7">
+        <div class="col-md-5 col-md-push-7 text-center">
           <h2 class="featurette-heading">Automation rules that you want. <span class="text-muted">Customize your dashboard with the tools you actually use.</span></h2>
           <p class="lead">Drag and drop the rules that are applicable to your email campaign. Unclutter your dashboard and simplify your workflow. But don't worry, a host of powerful tools can be added back when you need them.</p>
         </div>
         <div class="col-md-7 col-md-pull-5">
           <div class="feature-graphic-container">
-            
+           <div class="feature-graphic-header">
+             <img src="./assets/mc_script_white_web.png" alt="mailchimp">
+             <span class="pull-right">Save and Exit</span>
+           </div>
+            <img class="feature-graphic" src="./assets/Stats.svg" alt="Stats graphic">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5 text-center">
+          <h2 class="featurette-heading">Make Emails a Breeze! <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Who knew you were a design guru! Drag and drop to create stunning emails with reactive email templates. Phone, Tablet, Desktop, or 72 foot wide IMAX screen, your email will look great.</p>
+        </div>
+        <div class="col-md-7">
+          <div class="feature-graphic-container">
+           <div class="feature-graphic-header">
+             <img src="./assets/mc_script_white_web.png" alt="mailchimp">
+             <span class="pull-right">Save and Exit</span>
+           </div>
+            <img class="feature-graphic" src="./assets/MakeEmails.svg" alt="Smart-lists graphic">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5 col-md-push-7 text-center">
+          <h2 class="featurette-heading">Automated Smart Lists <span class="text-muted">Greater Success with Less Time</span></h2>
+          <p class="lead">Smart Lists present you with the perfect customers for your marketing campaign. Drag and drop smart lists into your campaign workflow to easily target the perfect group. A smartlist not specific enough for your needs? Not to worry, create your own with the most analytics at your fingertips.</p>
+        </div>
+        <div class="col-md-7 col-md-pull-5">
+          <div class="feature-graphic-container">
+           <div class="feature-graphic-header">
+             <img src="./assets/mc_script_white_web.png" alt="mailchimp">
+             <span class="pull-right">Save and Exit</span>
+           </div>
+            <img class="feature-graphic" src="./assets/AutomatedSmartLists.svg" alt="Smart-lists graphic">
           </div>
         </div>
       </div>
@@ -140,7 +165,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p><a href="#"><img src="/assets/mc_script_black_web.png" alt="mailchimp"></a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p><a href="#"><img src="./assets/mc_script_black_web.png" alt="mailchimp"></a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
      
     </div><!-- /.container -->
