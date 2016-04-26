@@ -1,0 +1,13 @@
+4/23 - 1 hour
+  -Drew wireframes and set up development environment
+
+4/24 - 2 hours
+  - Wrote content for page and set up basic html scaffolding
+
+4/25 - 10 hours
+  - 6 hours wireframing SVG Assets, sourcing stock images, and then building SVGs
+  - 2 hours coding remaining HTML, CSS, Javascript
+  - 2 hours editing and testing in mobile, Chrome, Firefox, and Safari
+  
+4/26 - 30 minutes
+  - minifying assets
