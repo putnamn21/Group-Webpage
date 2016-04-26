@@ -41,7 +41,7 @@ a:active {
 .call-to-action:focus {
   background-color: #e54527 !important;
 }
-/*Header*/
+/*++++++++++++++++ Header ++++++++++++++++*/
 .navbar {
   height: 60px;
   margin: 0;
@@ -57,6 +57,10 @@ a:active {
   font-size: 14px;
   margin-top: 10px !important;
   display: inline-block !important;
+}
+.navbar .hidden-sm {
+  position: absolute;
+  left: 37%;
 }
 .navbar-brand {
   padding: 5px 10px 10px 10px;
@@ -75,14 +79,14 @@ a:active {
 .navbar-toggle span {
   background-color: #e85c41;
 }
-/*Jumbotron*/
+/*++++++++++++++++ Jumbotron ++++++++++++++++*/
 .jumbotron {
   background-color: #eaeaea;
   padding: 10px 0 0 0;
   margin-bottom: 150px;
 }
 .jumbotron h1 {
-  margin: 60px 60px 10px 60px;
+  margin: 80px 0px 40px 0px;
   padding: 10px 0 10px 0;
   color: #373737;
 }
@@ -94,20 +98,6 @@ a:active {
 }
 .jumbotron .row {
   margin: 0px;
-}
-#animation-1 + span {
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-  -o-animation-delay: 0.1s;
-  -ms-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-#animation-1 + span + span {
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-  -ms-animation-delay: 0.2s;
-  animation-delay: 0.2s;
 }
 .main-graphic {
   z-index: 50;
@@ -159,7 +149,7 @@ a:active {
 .drag-drop img {
   width: 100%;
 }
-/*Reviews*/
+/*++++++++++++++++ Reviews ++++++++++++++++*/
 .reviews .img-responsive {
   width: 250px;
   display: inline;
@@ -168,9 +158,10 @@ a:active {
 .reviews h2 {
   color: #373737;
 }
-/*Features*/
+/*++++++++++++++++ Features ++++++++++++++++*/
 .feature-graphic-container {
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
   border: 2px solid #239ab9;
   background-color: #239ab9;
   -webkit-border-radius: 5px;
@@ -200,7 +191,10 @@ a:active {
   padding: 6px 10px 0 0;
   font-size: 12px;
 }
-.featurette {
+.featurette h3 {
+  margin-top: 10px;
+}
+.featurette .col-md-5 {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -209,17 +203,26 @@ a:active {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/*Footer*/
+.feature-fade-in {
+  -webkit-animation: featureFadeIn 0.8s ease-in forwards;
+  -moz-animation: featureFadeIn 0.8s ease-in forwards;
+  -o-animation: featureFadeIn 0.8s ease-in forwards;
+  -ms-animation: featureFadeIn 0.8s ease-in forwards;
+  animation: featureFadeIn 0.8s ease-in forwards;
+}
+/*++++++++++++++++ Footer ++++++++++++++++*/
 footer img {
   height: 30px;
 }
-/*Media Screen Edits*/
-/*Larger then medium*/
+/* Animations */
+/*++++++++++++++++ Media Screen Edits ++++++++++++++++*/
+/*Larger then 760*/
 @media screen and (min-width: 760px) {
   .jumbotron h1 {
     font-size: 40px;
   }
 }
+/*Smaller than 760*/
 @media screen and (max-width: 760px) {
   #navbar {
     background-color: #fff;
@@ -232,17 +235,55 @@ footer img {
     margin-left: 10px !important;
     display: inline-block !important;
   }
-  .jumbotron {
-    min-height: 400px;
+  .feature-graphic-container {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .drag-drop {
+    width: 18%;
+    -webkit-animation: dragAndDropSmall 1s 2s ease-in-out forwards;
+    -moz-animation: dragAndDropSmall 1s 2s ease-in-out forwards;
+    -o-animation: dragAndDropSmall 1s 2s ease-in-out forwards;
+    -ms-animation: dragAndDropSmall 1s 2s ease-in-out forwards;
+    animation: dragAndDropSmall 1s 2s ease-in-out forwards;
+  }
+  .reviews .col-lg-4 {
+    margin-bottom: 50px;
   }
 }
-/* Animations */
-.feature-fade-in {
-  -webkit-animation: featureFadeIn 0.8s ease-in forwards;
-  -moz-animation: featureFadeIn 0.8s ease-in forwards;
-  -o-animation: featureFadeIn 0.8s ease-in forwards;
-  -ms-animation: featureFadeIn 0.8s ease-in forwards;
-  animation: featureFadeIn 0.8s ease-in forwards;
+/* Smaller than 400px */
+@media screen and (max-width: 400px) {
+  .navbar {
+    padding: 0 5px 0 5px;
+  }
+  .navbar-toggle {
+    margin-right: 0px;
+  }
+  .navbar-brand {
+    padding-left: 0px;
+  }
+  .jumbotron {
+    margin-bottom: 75px;
+  }
+  .feature-graphic-container {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .featurette-divider {
+    margin: 30px 0 15px 0;
+  }
+  .featurette .lead {
+    margin-top: 20px;
+  }
+  footer img {
+    height: 25px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  footer p .pull-right {
+    padding-top: 4px;
+  }
 }
 @-moz-keyframes featureFadeIn {
   0% {
@@ -414,6 +455,90 @@ footer img {
     filter: none;
     top: 75%;
     left: 74%;
+  }
+}
+@-moz-keyframes dragAndDropSmall {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    top: 30.5%;
+    left: 4.3%;
+  }
+  10% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    top: 75.2%;
+    left: 73.3%;
+  }
+}
+@-webkit-keyframes dragAndDropSmall {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    top: 30.5%;
+    left: 4.3%;
+  }
+  10% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    top: 75.2%;
+    left: 73.3%;
+  }
+}
+@-o-keyframes dragAndDropSmall {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    top: 30.5%;
+    left: 4.3%;
+  }
+  10% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    top: 75.2%;
+    left: 73.3%;
+  }
+}
+@keyframes dragAndDropSmall {
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    top: 30.5%;
+    left: 4.3%;
+  }
+  10% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    top: 75.2%;
+    left: 73.3%;
   }
 }
 @-moz-keyframes fadeIn {
