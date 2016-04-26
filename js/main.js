@@ -4,13 +4,13 @@
         /* Check the location of each desired element */
         $('.featurette').each( function(i){
             
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var top_of_object = $(this).position().top;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
+            /* If the top of the object is 100px above the bottom of the screen, trigger animation */
+            if( bottom_of_window  > top_of_object + 200 ){
                 
-                $(this).addClass("feature-fade-in");
+                $(this).children('div').first().addClass("feature-fade-in");
                     
             }
             
