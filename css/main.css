@@ -103,6 +103,7 @@ a:active {
   z-index: 50;
   border: 2px solid #239ab9;
   background-color: #239ab9;
+  min-height: 475px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   border-top-width: 15px;
@@ -353,6 +354,9 @@ footer img {
   }
   .jumbotron h1 {
     margin: 80px 0 10px 0;
+  }
+  .main-graphic {
+    min-height: 250px;
   }
   .feature-graphic-container {
     width: 100%;
